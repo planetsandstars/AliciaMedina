@@ -1,0 +1,48 @@
+/*importing fonts----------------------------*/
+
+/*Elbrush font*/
+@font-face {
+    font-family: brush;
+    src: url(./Elbrush.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*Shinetypewriter font*/
+@font-face {
+    font-family: typer;
+    src: url(./ShineTypewriter.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*------------------fonts----------------------------*/
+
+/*color palette----------------------------------------------------------*/
+
+:root{
+    --bubblegum: #E3B0C8;
+    --darkberry: #6E1E3A;
+    --carrot: #D76A4C;
+    --lemon: #FADD8B;
+    --bbb: #A4BDE0;
+    --sailorb: #274F8B;
+    --forest: #25533F;
+    --limeade: #C9D763;
+}
+
+/*-------------------------------------------------------------------------*/
+
+body, html {
+  height: 100%;
+}
+
+.bg_blueimg {
+  background-image: url("./images/blue_white_checkered.png");
+
+  height: 50%;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
