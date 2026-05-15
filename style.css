@@ -1,0 +1,113 @@
+/*importing fonts----------------------------*/
+
+/*Elbrush font*/
+@font-face {
+    font-family: brush;
+    src: url(./Elbrush.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*Shinetypewriter font*/
+@font-face {
+    font-family: typer;
+    src: url(./ShineTypewriter.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*------------------fonts----------------------------*/
+
+/*color palette----------------------------------------------------------*/
+
+:root{
+    --bubblegum: #E3B0C8;
+    --darkberry: #6E1E3A;
+    --carrot: #D76A4C;
+    --lemon: #FADD8B;
+    --bbb: #A4BDE0;
+    --sailorb: #274F8B;
+    --forest: #25533F;
+    --limeade: #C9D763;
+}
+
+/*-------------------------------------------------------------------------*/
+
+body, h1, p{
+  margin: 0;
+}
+
+.hero_blueimg {
+  background-image: url("./images/purble.jpg");
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  justify-content: flex-start;
+  padding: 0;
+}
+
+
+
+.content_lem {
+  min-height: 80vh;
+  background-color: var(--lemon);
+  font-family:'typer';
+  color: var(--sailorb);
+}
+
+.title_head {
+  width: 410px;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem; 
+}
+
+.bg_g {
+  font-family: "brush";
+  color: var(--limeade);
+  text-align: center;
+  background-color: var(--sailorb);
+
+  display: inline-block;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.under_hero {
+  padding-top: 10px;
+}
+
+.button_bbg {
+  background-color: var(--bubblegum);
+  border: var(--darkberry);
+  color: var(--darkberry);
+  padding: 2%;
+  text-align: center;
+
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  font-family: "brush";
+  font-weight: bold;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.nav_nav {
+  text-align: center;
+ justify-content:flex-start;
+
+}
+
+.smaller_bnuy {
+  max-width: 10%;
+  max-height: 10%;
+  justify-content: center;
+}
+
