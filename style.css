@@ -99,15 +99,39 @@ body, h1, p{
   border-radius: 8px;
 }
 
-.nav_nav {
-  text-align: center;
- justify-content:flex-start;
-
+.nav_nav{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    width: fit-content;
+    padding: .9% 20%;
+    border-radius: 999px;
+    background: var(--bubblegum);
 }
+
+.nav_nav img{
+  align-items:start;
+}
+
+.nav_nav a{
+    text-decoration: none;
+    font-family: "brush";
+    font-weight: bold;
+    color: var(--darkberry);
+    font-size: 20px;
+    transition: opacity 0.3s ease;
+}
+
+.nav-nav a:hover{
+    opacity: 0.65;
+}
+
 
 .smaller_bnuy {
   max-width: 10%;
   max-height: 10%;
-  justify-content: center;
+
 }
+
+
 
