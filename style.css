@@ -131,11 +131,11 @@ body, h1, p{
 }
 
 .text_section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-    max-width: 500px;
+    max-width: 420px;
+    width: 100%;
+    padding: 20px;
+    background: white;
+    border-radius: 16px;
 }
 
 .smaller_bnuy {
@@ -185,6 +185,10 @@ p.desc {
   border-radius: 8px;
 }
 
+.btn_padded {
+  margin: 4%;
+}
+
 .btn_blue {
   background-color: var(--sailorb);
   color: var(--bbb);
@@ -232,10 +236,19 @@ p.desc {
 }
 
 .side_eye {
-    width: 220px;
-    border-radius: 20px;
-    flex-shrink: 0;
+    width: 100%;
+    height: auto;
+    display: block;
 }
+
+.side_eye_wrap {
+    flex-shrink: 0;
+    width: clamp(140px, 20vw, 260px);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+
 
 
 
@@ -290,4 +303,43 @@ p.desc {
 .carousel-item img {
     max-height: 400px;
     object-fit: cover;
+}
+
+/*some layout stuff*/
+.layout {
+  display: grid;
+  grid-template-columns: 200px 1fr 200px;
+  grid-template-areas: "asideLeft main asideRight";
+  gap: 20px;
+  align-items: start;
+}
+
+/* shared aside base */
+.aside {
+  position: relative;
+  padding: 10px 14px;
+  background: var(--lemon);
+  color: var(--sailorb);
+}
+
+/* left and right */
+.aside-left {
+  grid-area: asideLeft;
+  border-radius: 10px 0 0 10px;
+}
+
+.aside-right {
+  grid-area: asideRight;
+  border-radius: 0 10px 10px 0;
+}
+
+/* main-CENTERED content */
+.main {
+  grid-area: main;
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  max-width: 700px;
+  width: 100%;
+  margin: 0 auto;     
 }
